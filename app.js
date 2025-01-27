@@ -36,6 +36,9 @@ googleBtn.addEventListener("click", () => {
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
     const user = result.user;
+    console.log(user);
+    window.location=`home.html`
+    
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
